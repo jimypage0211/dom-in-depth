@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head>
+    <title>This is a title</title>
+</head>
+<body>
+    <h1>This will change color</h1>
+    <script>
+        let header = document.querySelector('h1');
+        setInterval(()=>{
+            if (header.style === "color:")
+            header.setAttribute('style', 'color: blue')
+        },2000)
+    </script>
+</body>
