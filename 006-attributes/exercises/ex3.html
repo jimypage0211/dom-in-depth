@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <head>
-    <title>This is a title</title>
+  <title>This is a title</title>
 </head>
 <body>
-    <h1>This will change color</h1>
-    <script>
-        let header = document.querySelector('h1');
-        setInterval(()=>{
-            if (header.style === "color:")
-            header.setAttribute('style', 'color: blue')
-        },2000)
-        //hjgjhgkjb
-    </script>
+  <h1>This will change color</h1>
+  <script>
+    let header = document.querySelector("h1");
+    setInterval(() => {
+      console.log(header.getAttribute("style"));
+      if (header.getAttribute("style") === "color: green") {
+        header.setAttribute("style", "color: black");
+      } else {
+        header.setAttribute("style", "color: green");
+      }
+    }, 2000);
+    //hjgjhgkjb
+  </script>
 </body>
